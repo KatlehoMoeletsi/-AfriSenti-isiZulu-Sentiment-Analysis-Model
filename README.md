@@ -24,6 +24,14 @@ Project Structure
 
 The repository is organised as follows:
 
+## Project Structure
+The repository is organised as follows:
+
+```
+## Project Structure
+The repository is organised as follows:
+
+```
 afrisenti-isizulu-sentiment-analysis/
 │
 ├── data/
@@ -43,6 +51,8 @@ afrisenti-isizulu-sentiment-analysis/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
+```
+```
 How the Model Works
 
 The model follows a simple natural language processing pipeline:
