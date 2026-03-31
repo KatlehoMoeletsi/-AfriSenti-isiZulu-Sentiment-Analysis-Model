@@ -1,18 +1,18 @@
-AfriSenti isiZulu Sentiment Analysis Model
+# 🧠 AfriSenti isiZulu Sentiment Analysis Model
 
 This project focuses on building a sentiment analysis model for African languages using the AfriSenti dataset. The main goal is to train a model that can predict whether a sentence written in isiZulu expresses a positive or negative emotion.
 
 Sentiment analysis is important because it helps computers understand how people feel when they write messages, comments, or reviews. In this project, we focus specifically on African languages, which are often under-represented in machine learning research.
 
-Objective
-
+## 🎯 Objective
 The objective of this project is to:
 
-Analyse text written in isiZulu
-Train a machine learning model using the AfriSenti dataset
-Predict whether a sentence expresses a positive or negative emotion
-Evaluate the model using standard performance metrics
-Dataset
+- 🔍 Analyse text written in isiZulu  
+- 🧠 Train a machine learning model using the AfriSenti dataset  
+- 😊 Predict whether a sentence expresses a positive or negative emotion  
+- 📊 Evaluate the model using standard performance metrics  
+
+---
 
 This project uses the AfriSenti dataset, which contains labelled sentences from multiple African languages.
 
@@ -32,28 +32,7 @@ The repository is organised as follows:
 The repository is organised as follows:
 
 ```
-afrisenti-isizulu-sentiment-analysis/
-│
-├── data/
-│   └── afrisenti_isizulu.csv
-│
-├── notebooks/
-│   └── sentiment_model.ipynb
-│
-├── src/
-│   ├── preprocess.py
-│   ├── train_model.py
-│   └── predict.py
-│
-├── results/
-│   └── model_results.txt
-│
-├── requirements.txt
-├── README.md
-└── .gitignore
-```
-```
-How the Model Works
+
 
 The model follows a simple natural language processing pipeline:
 
