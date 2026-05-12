@@ -30,7 +30,32 @@ The repository is organised as follows:
 ```
 ## Project Structure
 The repository is organised as follows:
-
+SwahiliSentimentProject/
+│
+├── data/
+│   ├── raw/
+│   ├── processed/
+│
+├── notebooks/
+│   ├── preprocessing.ipynb
+│   ├── baseline_models.ipynb
+│   ├── transformers.ipynb
+│
+├── models/
+│
+├── results/
+│   ├── graphs/
+│   ├── reports/
+│
+├── src/
+│   ├── preprocess.py
+│   ├── train_baseline.py
+│   ├── train_transformer.py
+│   ├── evaluate.py
+│
+├── requirements.txt
+│
+└── README.md
 ```
 
 
