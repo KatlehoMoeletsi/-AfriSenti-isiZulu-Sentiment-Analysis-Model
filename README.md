@@ -48,10 +48,12 @@ SwahiliSentimentProject/
 │   ├── reports/
 │
 ├── src/
+│   ├── augmentation.py
 │   ├── preprocess.py
 │   ├── train_baseline.py
 │   ├── train_transformer.py
 │   ├── evaluate.py
+│   ├── explainability.py
 │
 ├── requirements.txt
 │
