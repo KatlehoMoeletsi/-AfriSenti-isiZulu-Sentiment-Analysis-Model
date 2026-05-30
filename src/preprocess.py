@@ -54,7 +54,7 @@ def clean_text(text):
 # APPLY CLEANING
 # ==========================================
 
-df['clean_text'] = df['text'].apply(clean_text)
+df['clean_text'] = df['tweet'].apply(clean_text)
 
 # ==========================================
 # LABEL ENCODING
