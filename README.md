@@ -1,90 +1,192 @@
-# 🧠 AfriSenti isiZulu Sentiment Analysis Model
+# 🧠 AfriSenti Swahili Sentiment Analysis using Machine Learning and Transformer Models
 
-This project focuses on building a sentiment analysis model for African languages using the AfriSenti dataset. The main goal is to train a model that can predict whether a sentence written in isiZulu expresses a positive or negative emotion.
+This project investigates sentiment analysis for **Swahili**, one of Africa's most widely spoken languages, using both traditional machine learning algorithms and state-of-the-art transformer models.
 
-Sentiment analysis is important because it helps computers understand how people feel when they write messages, comments, or reviews. In this project, we focus specifically on African languages, which are often under-represented in machine learning research.
-
-## 🎯 Objective
-The objective of this project is to:
-
-- 🔍 Analyse text written in isiZulu  
-- 🧠 Train a machine learning model using the AfriSenti dataset  
-- 😊 Predict whether a sentence expresses a positive or negative emotion  
-- 📊 Evaluate the model using standard performance metrics  
+The objective is to determine whether a Swahili tweet expresses **positive**, **neutral**, or **negative** sentiment while evaluating whether African language-specific transformer models outperform conventional machine learning techniques.
 
 ---
 
-This project uses the AfriSenti dataset, which contains labelled sentences from multiple African languages.
+## 📌 Project Overview
 
-For this project, only the isiZulu part of the dataset is used. Each sentence in the dataset already has a sentiment label such as:
+Natural Language Processing (NLP) has achieved remarkable success for English and other high-resource languages. However, African languages such as Swahili remain underrepresented due to limited annotated datasets and language resources.
 
-Positive
-Negative
-Project Structure
+This project addresses this challenge by benchmarking traditional machine learning models against transformer-based architectures using the **AfriSenti Swahili dataset**.
 
-The repository is organised as follows:
+---
 
-## Project Structure
-The repository is organised as follows:
+## 🎯 Objectives
+
+The project aims to:
+
+- Perform sentiment analysis on Swahili tweets
+- Build an end-to-end NLP pipeline
+- Compare traditional machine learning models with transformer models
+- Evaluate whether African language pretraining improves performance
+- Analyse model strengths and weaknesses through error analysis
+- Establish a strong baseline for future Swahili NLP research
+
+---
+
+## 📂 Dataset
+
+This project uses the **AfriSenti Swahili Dataset**, containing manually labelled Swahili tweets.
+
+Sentiment labels include:
+
+- 😀 Positive
+- 😐 Neutral
+- 😞 Negative
+
+---
+
+## 🚀 Project Pipeline
+
+The workflow consists of:
+
+1. Data Collection
+2. Data Cleaning
+3. Text Preprocessing
+4. Feature Engineering
+5. TF-IDF Vectorisation
+6. Baseline Machine Learning Models
+7. Transformer Fine-tuning
+8. Model Evaluation
+9. Error Analysis
+10. Performance Comparison
+
+---
+
+## 🧹 Data Preprocessing
+
+The following preprocessing steps were applied:
+
+- Remove URLs
+- Remove Twitter mentions
+- Remove punctuation
+- Remove special characters
+- Remove extra whitespace
+- Text normalisation
+- Preserve stopwords for improved sentiment classification
+
+---
+
+## 🤖 Models Implemented
+
+### Baseline Machine Learning Models
+
+- Naive Bayes
+- Logistic Regression
+- Linear Support Vector Machine (SVM)
+
+### Transformer Models
+
+- XLM-RoBERTa
+- AfriBERTa
+
+---
+
+## 📊 Evaluation Metrics
+
+Models were evaluated using:
+
+- Accuracy
+- Precision
+- Recall
+- Weighted F1-score
+- Classification Report
+- Confusion Matrix
+
+---
+
+## 📈 Key Findings
+
+- Logistic Regression was the strongest traditional machine learning baseline.
+- AfriBERTa achieved the best overall performance.
+- African language-specific pretraining significantly outperformed generic multilingual transformers.
+- XLM-RoBERTa underperformed compared to simpler machine learning models.
+- Dataset imbalance negatively affected minority class prediction.
+
+---
+
+## 🛠 Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Hugging Face Transformers
+- PyTorch
+- Matplotlib
+- Seaborn
+- Jupyter Notebook
+
+---
+
+## 📁 Project Structure
 
 ```
-## Project Structure
-The repository is organised as follows:
 SwahiliSentimentProject/
 │
 ├── data/
 │   ├── raw/
-│   ├── processed/
+│   └── processed/
 │
 ├── notebooks/
 │   ├── preprocessing.ipynb
 │   ├── baseline_models.ipynb
-│   ├── transformers.ipynb
+│   └── transformers.ipynb
+│
+├── src/
+│   ├── preprocess.py
+│   ├── augmentation.py
+│   ├── train_baseline.py
+│   ├── train_transformer.py
+│   ├── evaluate.py
+│   └── explainability.py
 │
 ├── models/
 │
 ├── results/
-│   ├── graphs/
 │   ├── reports/
-│
-├── src/
-│   ├── augmentation.py
-│   ├── preprocess.py
-│   ├── train_baseline.py
-│   ├── train_transformer.py
-│   ├── evaluate.py
-│   ├── explainability.py
+│   ├── graphs/
+│   ├── confusion_matrices/
+│   └── model_comparison/
 │
 ├── requirements.txt
-│
 └── README.md
 ```
 
+---
 
-The model follows a simple natural language processing pipeline:
+## 💡 Future Improvements
 
-Load the dataset
-Clean and preprocess the text
-Convert the text into numerical features
-Train a classification model
-Predict sentiment (positive or negative)
-Evaluate the model performance
-Tools and Technologies
+- Increase dataset size
+- Apply data augmentation (Back Translation)
+- Hyperparameter optimisation
+- Cross-validation
+- GPU training
+- Deploy the model using FastAPI
+- Build a Streamlit web application
+- Dockerise the application
+- CI/CD with GitHub Actions
 
-This project uses:
+---
 
-Python
-Pandas
-Scikit-learn
-Jupyter Notebook
-Natural Language Processing (NLP) techniques
-Model Evaluation
+## 📚 Skills Demonstrated
 
-The model is evaluated using the following metrics:
+- Natural Language Processing
+- Machine Learning
+- Transformer Models
+- Text Classification
+- Feature Engineering
+- Model Evaluation
+- Error Analysis
+- Python Development
+- Data Preprocessing
+- Research and Experimentation
 
-Accuracy
-Precision
-Recall
-F1-score
+---
 
-These metrics help measure how well the model predicts positive and negative sentiment in isiZulu sentences.
+## 📜 License
+
+This project is released under the MIT License.
