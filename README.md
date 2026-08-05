@@ -1,4 +1,4 @@
-# 🧠 AfriSenti Swahili Sentiment Analysis using Machine Learning and Transformer Models
+# 🧠 Swahili Sentiment Analysis using and Transformer Models
 
 This project investigates sentiment analysis for **Swahili**, one of Africa's most widely spoken languages, using both traditional machine learning algorithms and state-of-the-art transformer models.
 
